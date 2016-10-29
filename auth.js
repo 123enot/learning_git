@@ -1,3 +1,7 @@
 function authenticate (login, password) {
-  return 'Login is not corrent';
+  if (login === 'login' || password === 'password') {
+    return 'You are logged in';
+  } else {
+    return 'Login is not correct';
+  }
 }
